@@ -1,0 +1,44 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.background {
+  position: absolute;
+  width: 440px;
+  height: 277px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.draggable-square {
+  position: absolute;
+  width: 65.5px;
+  height: 65.5px;
+  background-color: #ffcc00;
+  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dragging {
+  background-color: #00ccff;
+}
+
+.orientation-info {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 100;
+  color: #000;
+}
